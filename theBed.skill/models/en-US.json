@@ -1,0 +1,103 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "the bed",
+      "intents": [
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "getSleepNumber",
+          "slots": [
+            {
+              "name": "side",
+              "type": "AMAZON.RelativePosition"
+            }
+          ],
+          "samples": [
+            "getsleepnumber {side}",
+            "get {side}",
+            "what's the {side} sleep number",
+            "what is the sleep number on the {side}",
+            "what is the {side} sleep number",
+            "whats {side} sleep number"
+          ]
+        },
+        {
+          "name": "isInBed",
+          "slots": [
+            {
+              "name": "side",
+              "type": "AMAZON.RelativePosition"
+            }
+          ],
+          "samples": [
+            "isinbed {side}",
+            "is there someone occupying the {side} side of the bed",
+            "is there someone occupying the {side} side",
+            "is the {side} side occupied",
+            "is there someone in the {side} of the bed",
+            "is anyone in the {side} side of the bed",
+            "is anyone in the {side} of the bed",
+            "is someone in the {side} side of the bed",
+            "is someone in the {side} side",
+            "is there someone in the {side} side of the bed",
+            "is the the {side} side in bed",
+            "is the {side} in bed"
+          ]
+        },
+        {
+          "name": "setSleepNumber",
+          "slots": [
+            {
+              "name": "side",
+              "type": "AMAZON.RelativePosition"
+            },
+            {
+              "name": "sleepnum",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "setsleepnumber {side} {sleepnum}",
+            "set {side} to {sleepnum}",
+            "change sleep number on the {side} to {sleepnum}",
+            "change the sleep number on the {side} to {sleepnum}",
+            "make the {side} sleep number {sleepnum}",
+            "make the {side} side sleep number {sleepnum}",
+            "set the {side} sleep number to {sleepnum}",
+            "set the {side} side sleep number to {sleepnum}"
+          ]
+        },
+        {
+          "name": "showUserID",
+          "slots": [],
+          "samples": [
+            "skillid",
+            "userid",
+            "config"
+          ]
+        }
+      ],
+      "types": []
+    }
+  },
+  "version": "3"
+}

@@ -1,0 +1,21 @@
+{
+  "manifest": {
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "https://EXAMPLEWEBSITE.com/theBed/theBed.php",
+          "sslCertificateType": "Trusted"
+        },
+        "interfaces": []
+      }
+    },
+    "manifestVersion": "1.0",
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "name": "The Bed"
+        }
+      }
+    }
+  }
+}
