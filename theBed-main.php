@@ -4,6 +4,7 @@ require_once "random_compat-2.0.18/lib/random.php";
 
 function doMain($post)
 {
+    $debug=0;
     $outtext="Something didn't go right, please contact the author";
     $card_outtext="Something didn't go right, please contact the author";
     $amzn_user=$post->session->user->userId;
@@ -75,7 +76,7 @@ function doMain($post)
                     accessdb("signup", "put", $amzn_user, $signup);
                 }
             }
-            $card_outtext = "To be able to use the 'the bed' app, you'll need to link it to your userid and password for sleepnumber. Please use the following signup link - https://example.com/theBed/signup.php?access=".$signup;
+            $card_outtext = "To be able to use the 'the bed' app, you'll need to link it to your userid and password for sleepnumber. Please use the following signup link - https://thebedskill.com/theBed/signup.php?access=".$signup;
         }
     }
 
@@ -321,6 +322,7 @@ function getResults($f_amzn_user, $function, $data = null)
 
 function requestJSON($f_amzn_user, $path, $data = null, $method = "GET")
 {
+    $debug       = 0;
     $site_url    = "https://prod-api.sleepiq.sleepnumber.com";
     $user_agent  = "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 1.0.3705; .NET CLR 1.1.4322; Media Center PC 4.0)";
     $token=null;
